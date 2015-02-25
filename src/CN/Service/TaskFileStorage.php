@@ -56,9 +56,12 @@ class TaskFileStorage implements TaskStorageInterface
      */
     public function putTask(Task &$task)
     {
-        $taskId = Uuid::uuid4()->toString();
-        $filename = $this->getFilenameFromId($taskId);
-        $task->id =$taskId;
+        if($task->id === null){
+            $taskId = Uuid::uuid4()->toString();
+            $task->id =$taskId;
+        }
+        $filename = $this->getFilenameFromId($task->id);
+
         if(file_put_contents($filename,$task->serialize()) === false){
             throw new \Exception('Unable to save task.');
         }
