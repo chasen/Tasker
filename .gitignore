@@ -1,0 +1,4 @@
+vendor/
+tasks/*
+!tasks/.gitkeep
+.idea/

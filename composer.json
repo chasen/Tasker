@@ -1,0 +1,23 @@
+{
+    "name": "chasenoel/tasker",
+    "description": "A Simple micro application to handle task management",
+    "minimum-stability": "alpha",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Chase Noel",
+            "email": "chase.i.noel@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "require":{
+        "silex/silex": "~1.2",
+        "symfony/validator": "~2.6",
+        "twig/twig": "~1.18",
+        "rhumsaa/uuid": "~2.8"
+    }
+}
