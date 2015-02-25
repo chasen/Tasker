@@ -1,5 +1,7 @@
 # TASKER
 
+[![Build Status](https://travis-ci.org/chasen/Tasker.svg)](https://travis-ci.org/chasen/Tasker)
+
 Tasker is a simple application designed to meet a few goals:
 
 - Use API to create, read, and remove tasks.
